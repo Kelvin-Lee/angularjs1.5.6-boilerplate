@@ -2,12 +2,15 @@
     <head>
         <meta charset="utf-8">
         <title>Angular Boilerplate</title>
+        <!-- load CDN before app.js, so that app.js can use `angular` in its code -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <!-- Since the CDN has been loaded, can now safely load app.js, which uses/references `angular` -->
         <script src="app.js"></script>
     </head>
     <body ng-app="boilerplate">
        <p>We should expect the AngularJS-based stuff to work on this page</p>
        <hr></hr>
+       <!-- If the message-component appears, we did our job right. If not, we did not do our job right -->
        <message-component></message-component>
     </body>
 </html>
